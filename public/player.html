@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Askey</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52_aq3TTdJrFUHzOFfi2_QuH2HFp5M6xOfFdYwT1A&s" type="image/x-icon">
+    <style>
+        /* #progress{
+            color: rgba(240, 248, 255, 0);
+        } */
+        
+        html{
+
+            /* text-align: center; */
+            font-size: larger;
+            height: 100%;
+            background-size: contain;
+            background: rgb(0,212,255);
+        }
+        .gamemode{
+            
+            background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(76,147,123,1) 78%, rgba(2,0,36,1) 97%);
+        }
+        #progress{
+            color: rgba(240, 248, 255, 0);
+        }
+        body{
+            font-size: x-large;
+        }
+        #fl{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 7%;
+        }
+        input {
+            height: 4%;
+            font-size: x-large;
+            text-align: center;
+            border-radius: 15%;
+            border: none;
+        }
+        #playground {
+            top: 30%;
+            position: fixed;
+            width: 40%;
+            border-radius: 6%;
+            border-width: 3%;
+            border: solid orangered;
+            padding: 3%;
+            /* text-align: center; */
+            color: black;
+        }
+        #playground_ol {
+            top: 30%;
+            position: fixed;
+            width: 40%;
+            border-radius: 6%;
+            border-width: 3%;
+            border: solid rgba(255, 68, 0, 0);
+            padding: 3%;
+            /* text-align: center; */
+            color: red;
+        }
+        #pgdisplay{
+            top: 70%;
+            position: fixed;
+        }
+        #register {
+            background-color: red;
+            scale: 2;
+            border-radius: 14%;
+            border: none;
+            padding: 8px;
+        }
+        #others {
+            color: rgba(240, 248, 255, 0);
+        }
+        #yell {
+            color: white;
+            font-size: larger;
+
+        }
+    </style>
+   
+</head>
+<body>
+   <!-- your id: <p id="uid"></p>  --> <br>
+   <div id="fl" >
+    <div>
+
+        <input id="name" type="text" placeholder="enter your name">
+        <button id="mute" ><img src="https://media.istockphoto.com/id/1305893663/vector/silent-sound-off-icon-vector-for-your-web-design-logo-ui-illustration.jpg?s=612x612&w=0&k=20&c=czrINWt2weKC3fLHU3KqI2eZBFdwhOuuCZxS5JNGpSU=" width="50" alt="mute"></button> <br>
+        <br>
+    </div>
+      <button id="register" >Start</button> <br>
+<div id="yell" >
+</div>
+      <div id="playground" >
+
+      </div>
+      <div id="playground_ol" >
+
+    </div>
+    <div id="pgdisplay">
+
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <br><br><br><br><br><br>
+  <br><br><br><br><br><br>
+
+    <ul id="others">
+
+    </ul>
+
+
+    <footer >
+
+    </footer>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+    <script src="./socks_pr.js" ></script>
+    <script src="./socks.js" ></script>
+    <p id="progress">0</p>
+    <audio id="bgm" src="peninsula.mp3" hidden preload loop></audio>
+    
+</body>
+
+</html>
